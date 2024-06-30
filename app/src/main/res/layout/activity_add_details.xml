@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="85px"
+    android:background="@drawable/background">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomButtonsLayout"
+            android:paddingBottom="8dp"> <!-- Adds space from the phone's navigation button -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="85px"
+                    android:layout_marginBottom="85px"
+                    android:padding="68px">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Details"
+                            android:textColor="@color/white"
+                            android:textSize="40dp"
+                            android:textAlignment="center"
+                            android:layout_marginBottom="20dp"
+                            android:padding="8dp"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="First Name"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:padding="8dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter the first name"
+                            android:inputType="text"
+                            android:minHeight="48dp"
+                            android:textColorHint="#B4B0B0"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:padding="8dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter the last name"
+                            android:inputType="text"
+                            android:minHeight="48dp"
+                            android:textColorHint="#B4B0B0"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="College Name"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:padding="8dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/cname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter the college name"
+                            android:inputType="text"
+                            android:minHeight="48dp"
+                            android:textColorHint="#B4B0B0"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:padding="8dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter date of birth"
+                            android:inputType="date"
+                            android:minHeight="48dp"
+                            android:textColorHint="#B4B0B0"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Course Name"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:padding="8dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/coname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter the course"
+                            android:inputType="text"
+                            android:minHeight="48dp"
+                            android:textColorHint="#B4B0B0"></EditText>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Number"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:padding="8dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter the mobile number"
+                            android:inputType="number"
+                            android:minHeight="48dp"
+                            android:textColorHint="#B4B0B0"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:padding="8dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter E-mail Address"
+                            android:inputType="text"
+                            android:minHeight="48dp"
+                            android:textColorHint="#B4B0B0"></EditText>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:padding="8dp"></TextView>
+
+                        <EditText
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter the address"
+                            android:inputType="text"
+                            android:minHeight="48dp"
+                            android:textColorHint="#B4B0B0"></EditText>
+                </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottomButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="42dp"
+            android:background="@color/white">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/subbt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00A200"
+                    android:padding="8dp"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/gobackbt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#A2A202"
+                    android:padding="8dp"
+                    android:text="Go Back"
+                    android:textColor="#ffffff"
+                    android:textSize="18dp" />
+
+        </LinearLayout>
+</RelativeLayout>
