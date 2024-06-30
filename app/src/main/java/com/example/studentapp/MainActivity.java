@@ -28,5 +28,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         viewbt = findViewById(R.id.viewbt);
+        viewbt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ViewDetails.class);
+                startActivity(intent);
+            }
+        });
     }
 }

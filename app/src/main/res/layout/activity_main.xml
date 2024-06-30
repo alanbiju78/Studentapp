@@ -8,6 +8,13 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ImageView
+        android:layout_width="1in"
+        android:layout_height="1in"
+        android:layout_margin="20dp"
+        android:src="@drawable/titleicon"
+        ></ImageView>
+
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="1.5in"
         android:layout_height="wrap_content"
